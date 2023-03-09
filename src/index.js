@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./css/index.css";
+import App from "./App";
+import ErrorBoundary from "./ErrorBoundary";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// import { BrowserRouter as Router } from 'react-router-dom';
+
+// import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+
+// import { Provider as ReduxProvider } from 'react-redux';
+// import configureStore from './redux/configureStore';
+
+// import { ChakraProvider } from '@chakra-ui/react';
+// import theme from './theme';
+// import './theme/styles.css';
+
+// const store = configureStore();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ErrorBoundary>
+    <React.StrictMode>
+      {/* <ReduxProvider store={store}> */}
+      {/* <Router> */}
+      {/* <Auth0ProviderWithHistory> */}
+      {/* <ChakraProvider theme={theme}> */}
+      <App />
+      {/* </ChakraProvider> */}
+      {/* </Auth0ProviderWithHistory> */}
+      {/* </Router> */}
+      {/* </ReduxProvider> */}
+    </React.StrictMode>
+  </ErrorBoundary>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
