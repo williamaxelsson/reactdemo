@@ -11,8 +11,8 @@ import ErrorBoundary from "./ErrorBoundary";
 // import { Provider as ReduxProvider } from 'react-redux';
 // import configureStore from './redux/configureStore';
 
-// import { ChakraProvider } from '@chakra-ui/react';
-// import theme from './theme';
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from './theme';
 // import './theme/styles.css';
 
 // const store = configureStore();
@@ -24,9 +24,9 @@ root.render(
       {/* <ReduxProvider store={store}> */}
       {/* <Router> */}
       {/* <Auth0ProviderWithHistory> */}
-      {/* <ChakraProvider theme={theme}> */}
+      <ChakraProvider theme={theme}>
       <App />
-      {/* </ChakraProvider> */}
+      </ChakraProvider>
       {/* </Auth0ProviderWithHistory> */}
       {/* </Router> */}
       {/* </ReduxProvider> */}

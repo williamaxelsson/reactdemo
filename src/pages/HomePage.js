@@ -1,5 +1,7 @@
 import logo from "../logo.svg";
 import "../css/App.css";
+import { ReusableButton } from '../components';
+import { callEndpoint } from '../functions';
 
 export default function HomePage() {
   return (
@@ -18,6 +20,7 @@ export default function HomePage() {
           Learn React
         </a>
         <p> Test first commit</p>
+        <ReusableButton text="Test button" customFunction={ async () => console.log( await callEndpoint('GET', 'http://localhost:5000/users/test'))}/>
       </header>
     </div>
   );
