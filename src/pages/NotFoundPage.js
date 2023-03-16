@@ -8,8 +8,17 @@ function NotFoundPage() {
         <h1>404 - Page Not Found</h1>
         <p>Uh oh, it looks like you took a wrong turn!</p>
         <p>
-          Why not help this puppy <Link to="/">home</Link> and try again
-          instead?
+          Why not help this puppy{" "}
+          <Link to="/">
+            <text
+              style={{
+                color: "lightblue",
+              }}
+            >
+              home
+            </text>
+          </Link>{" "}
+          and try again instead?
         </p>
         <img
           src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif"
