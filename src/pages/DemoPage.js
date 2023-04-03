@@ -1,7 +1,7 @@
 import "../css/App.css";
 import { useState } from "react";
 import { ReusableButton } from '../components';
-import { callEndpoint } from '../functions';
+// import { callEndpoint } from '../functions';
 import { Box, HStack, VStack, Textarea, Input, Text, Divider } from "@chakra-ui/react";
 
 export default function DemoPage() {
